@@ -7,3 +7,14 @@ map.set(77, "Dravid");
 map.forEach( (key, value) => {
     console.log(key, value);
 } );
+
+const arrayNumbers=[10,20,30,40,20,10];
+
+arrayNumbers.forEach((currentValue)=>console.log(currentValue)
+    
+);
+console.log("===== Traversing set using forEach() =====");
+const setOfNumbers= new Set(arrayNumbers);
+setOfNumbers.forEach((value)=>{
+    console.log(value);
+});

@@ -41,3 +41,6 @@ console.log("====== Traversing set =======");
 for (const element of setOfNumbers) {
     console.log(element);
 }
+let arrayNumbers=[2,3,4,5,6,3,5];
+let arrayUniqueElements=[...new Set(arrayNumbers)];
+console.log(arrayUniqueElements);

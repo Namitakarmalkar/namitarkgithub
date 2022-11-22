@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        form {            width: fit-content;        }
+
+        #form_id {
+            align-items: center;
+            background-color: rgb(196, 247, 217);
+        }
+
+        body {            background-color: rgb(244, 201, 120);        }
+
+        #form_id label {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(22, 85, 245);
+        }
+
+        input[type="text"] {
+            background-color: rgb(234, 242, 239);
+            color: rgb(15, 28, 129);
+            width: 200px;
+            text-transform: uppercase;
+            border-radius: 10px;
+
+        }
+
+        #traning {                   color: rgb(7, 7, 169);   font-family: 'Times New Roman', Times, serif;         }
+        #gender {                    color: rgb(6, 6, 224);        }
+        input[type="date"] {           background-color: rgb(234, 242, 239);            color: rgb(28, 32, 240);        }
+        textarea {                     background-color: rgb(234, 242, 239);           color: rgb(28, 32, 240);        }
+        input[type="file"] {           background-color: rgb(234, 242, 239);            color: rgb(28, 32, 240);        }
+        input[type="email"] {          background-color: rgb(234, 242, 239);            color: rgb(28, 32, 240);        }
+        input[type="password"] {       background-color: rgb(234, 242, 239);            color: rgb(28, 32, 240);        }
+        input[type="button"] {       color: rgb(246, 249, 246);            background-color: rgb(67, 88, 247);        
+                                     width: 80px;     border-radius: 10px;            margin-right: 100px;        }
+        input[type="submit"]:hover { color: rgb(249, 96, 25);            background-color: rgb(252, 251, 253);        }
+    </style>
+</head>
+
+<body>
+    <form style="width: 480px;">
+        <fieldset id="form_id">
+            <legend>
+                <h2> Student Registration form</h2>
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td> <label> First Name </label> </td>
+                        <td> <input type="text" placeholder="First name" autofocus></td>
+                    </tr>
+                    <tr>
+
+                        <td> <label> Middle Name </label> </td>
+                        <td> <input type="text" placeholder="Middle name" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td> <label> Last Name</label> </td>
+                        <td> <input type="text"placeholder="Last name" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td> <label> Email Address</label></td>
+                        <td><input type="email" placeholder="abc@gmail.com"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Password </label> </td>
+                        <td> <input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td> <label> Education </label></td>
+                        <td><input type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label class="date_type"> Date of birth </label></td>
+                        <td> <input type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label class="date_type"> Country </label></td>
+                        <td> <input type="text" value="India" disabled> </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td> <label class="date_type"> Citizenship </label></td>
+                        <td> <input type="text" value="Indian" readonly> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Permanent Address </label></td>
+                        <td><textarea row="5" cols="15"></textarea> </td>
+                        
+                        <tr>
+
+                        <td> <label> Contact Details</label></td>
+                        <td><input type="Mobile No" placeholder="Enter your Mobile No"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Profile Photo</label></td>
+                        <td> <input type="file"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> Profile Photo</label></td>
+                        <td> <input type="file" multiple> </td>
+                    </tr>
+                    <tr>
+                        <td><label>Select Graduation</label></td>
+                        <td>
+                            <select>
+                                <option>BCA</option>
+                                <option>MCA</option>
+                                <option>MSc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="traning"> Tranings</td>
+                        <td>
+                            <input type="checkbox"><label>Anguler</label>
+                            <input type="checkbox"><label>Java</label>
+                            <input type="checkbox"><label>React</label>
+                            <input type="checkbox"><label>Testing</label>
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td id="gender"> Gender </td>
+                        <td>
+                            <input type="radio" name="gender"> <label> Female </label>
+                            <input type="radio" name="gender"> <label> Male </label>
+                            <input type="radio" name="gender"> <label> Others </label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" value="Submit">
+            <input type="button" value="Reset">
+
+        </fieldset>
+    </form>
+
+    <p> <strong> SSO sign in options</strong> &nbsp;&nbsp;
+        <a href="#"><i class="fa fa-google fa-1x" aria-hidden="true"></i></a> &nbsp;&nbsp;
+        <a href="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a> &nbsp;&nbsp;
+        <a href="#"><i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i> </a>
+    </p> 
+</body>
+
+</html>

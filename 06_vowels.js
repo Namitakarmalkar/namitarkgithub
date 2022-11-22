@@ -1,14 +1,16 @@
 var givenstring ="I Love Javascript";
 var totalchar=givenstring.length;
-
+var result="";
 for(let index=0; index<totalchar; index++)
 {
     if(index%2==0){
         var charat =givenstring.charAt(index);
+      
       //  console.log(charat);
     }
 }
 console.log("vowelschar--------------------");
+
 var givenString ="I Love Javascript";
 for(let index=0; index<givenString.length; index++)
 {
@@ -19,9 +21,11 @@ for(let index=0; index<givenString.length; index++)
          if(char=="a" || char=="e" || char=="i" )
          {
             console.log(char);
+            result=result+char;
          }
     }
 }
+console.log(        result    );
 console.log("Revers String --------------------");
 var myName="Namit"
 // 10 to 0
@@ -34,4 +38,4 @@ for (let index = lenthStr; index >= 0; index--) {
 }
 console.log(reverseStr);
 
-console.log("count the total number vowels using includes()for string-"Good Morning IT champ");
+console.log(`count the total number vowels using includes()for string-"Good Morning IT champ`);
